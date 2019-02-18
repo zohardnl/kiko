@@ -1,0 +1,328 @@
+@import url("https://fonts.googleapis.com/css?family=Assistant:400,700,800&subset=hebrew");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Assistant", sans-serif;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: #0e0e0e;
+  color: white;
+  height: 100%;
+  font-size: 1vw;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  body {
+    font-size: 4.5vw;
+  }
+}
+
+@media (max-width: 767px) {
+  body {
+    font-size: 4.5vw;
+  }
+}
+
+.logo {
+  width: 20vh;
+}
+
+img {
+  border: 0;
+}
+
+.arrow {
+  padding-right: 1vw;
+}
+
+.arrow img {
+  width: 10vw;
+  vertical-align: middle;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .arrow img {
+    width: 30vw;
+  }
+}
+
+@media (max-width: 767px) {
+  .arrow img {
+    width: 30vw;
+  }
+}
+
+::-webkit-input-placeholder {
+  padding: 0.5vw;
+  font-size: 1vw;
+}
+
+:-ms-input-placeholder {
+  padding: 0.5vw;
+  font-size: 1vw;
+}
+
+::-ms-input-placeholder {
+  padding: 0.5vw;
+  font-size: 1vw;
+}
+
+::placeholder {
+  padding: 0.5vw;
+  font-size: 1vw;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  ::-webkit-input-placeholder {
+    font-size: 4vw;
+  }
+  :-ms-input-placeholder {
+    font-size: 4vw;
+  }
+  ::-ms-input-placeholder {
+    font-size: 4vw;
+  }
+  ::placeholder {
+    font-size: 4vw;
+  }
+}
+
+@media (max-width: 767px) {
+  ::-webkit-input-placeholder {
+    font-size: 4vw;
+  }
+  :-ms-input-placeholder {
+    font-size: 4vw;
+  }
+  ::-ms-input-placeholder {
+    font-size: 4vw;
+  }
+  ::placeholder {
+    font-size: 4vw;
+  }
+}
+
+.divform {
+  position: relative;
+  display: inline-block;
+  text-align: right;
+}
+
+.divform a {
+  color: white;
+}
+
+.divform .terms {
+  display: inline-block;
+  margin-right: 25px;
+}
+
+.info {
+  resize: none;
+  width: 17.5vw;
+  font-size: 1vw;
+  border: 0;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .info {
+    width: 60vw;
+    height: 20vh;
+    font-size: 4vw;
+  }
+}
+
+@media (max-width: 767px) {
+  .info {
+    width: 60vw;
+    height: 15vh;
+    font-size: 4vw;
+  }
+}
+
+.mail {
+  width: 17.5vw;
+  height: 6vh;
+  font-size: 1vw;
+  margin: 0.8vh 0 0.5vh 0;
+  border: 0;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .mail {
+    width: 60vw;
+    height: 8vh;
+    font-size: 4vw;
+  }
+}
+
+@media (max-width: 767px) {
+  .mail {
+    width: 60vw;
+    height: 6vh;
+    font-size: 4vw;
+  }
+}
+
+.btn {
+  position: relative;
+  margin: 1vh 0 3vh 0.5vh;
+  background: transparent;
+  color: white;
+  border: 0.2vw solid white;
+  width: 17.5vw;
+  height: 7vh;
+  font-size: 1.4vw;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .btn {
+    margin: 1.5vh 0 1vh 0;
+    width: 60vw;
+    height: 8vh;
+    font-size: 4vw;
+    border: 0.5vw solid white;
+  }
+}
+
+@media (max-width: 767px) {
+  .btn {
+    margin: 1vh 0 1vh 0;
+    width: 60vw;
+    height: 6vh;
+    font-size: 4vw;
+    border: 0.5vw solid white;
+  }
+}
+
+.btn:active {
+  top: 1px;
+}
+
+.main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50vw 50vw;
+      grid-template-columns: 50vw 50vw;
+  position: absolute;
+  height: 85vh;
+  width: 100%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+@media (max-width: 767px) {
+  .main {
+    -ms-grid-columns: unset;
+        grid-template-columns: unset;
+    top: 0;
+    -webkit-transform: unset;
+            transform: unset;
+    height: auto;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .main {
+    -ms-grid-columns: unset;
+        grid-template-columns: unset;
+    top: 0;
+    -webkit-transform: unset;
+            transform: unset;
+    height: auto;
+  }
+}
+
+.main .one {
+  text-align: center;
+  background: black;
+}
+
+.main .one .logoref {
+  text-decoration: none;
+}
+
+.main .two {
+  background: url("./image/anim.gif") no-repeat center/cover;
+}
+
+@media (max-width: 767px) {
+  .main .two {
+    background: unset;
+  }
+  .main .two .gif {
+    display: block !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .main .two {
+    background: unset;
+  }
+  .main .two .gif {
+    display: block !important;
+  }
+}
+
+.main .two .gif {
+  width: 100%;
+  display: none;
+}
+
+.box {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  font-size: 4px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.box input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.box .checkmark {
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  background-color: transparent;
+  border: 2px solid white;
+  top: -16px;
+}
+
+.box .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.box input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.box .checkmark:after {
+  left: 5px;
+  top: 1px;
+  width: 4px;
+  height: 7px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(40deg);
+          transform: rotate(40deg);
+}
+/*# sourceMappingURL=style.css.map */
